@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marcus Yee - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Marcus Yee
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          marcusy3@illinois.edu
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +14082095303
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          </div>
+      </div>    
+    </nav>
+
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://camo.githubusercontent.com/20a32ecc5160952ce26157fd967b290294f9bf58a05d721282c2cd9efec8bc5f/68747470733a2f2f7777772e76656e756578706c6f7265722e636f6d2e73672f75706c6f6164732f576f726b696e67253230696e25323070726f6772657373732e676966" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Marcus Yee! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am an aspiring full stack developer studying Data Science at the University of Illinois
+            Urbana-Champaign. I excel at building scalable backend systems and deploying 
+            predictive models that optimize performance and drive tangible business value. 
+            I'm most proficient in Python frameworks and libraries, like Django and pyTorch.
+          </p>
+          
+          <div style="margin-top: 25px;">
+            <a href="mailto:marcusy3@illinois.edu" style="text-decoration: none; padding: 10px 20px; background-color: #007bff; color: white; border-radius: 5px; margin-right: 15px; font-weight: bold;">
+              Email Me
+            </a>
+            
+            <a href="./resume.pdf" download="Marcus_Yee_Resume" style="text-decoration: none; padding: 10px 20px; background-color: #28a745; color: white; border-radius: 5px; font-weight: bold;">
+              Download Resume
+            </a>
+          </div>
+          </div>
+    </section>
+              
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://images.vexels.com/media/users/3/166477/isolated/lists/9bb722f0e85ddbc1ce0f064534fd2311-python-programming-language-icon.png"/>
+            <h6>Python</h6>
+            <p>6 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="https://images.vexels.com/media/users/3/166401/isolated/preview/b82aa7ac3f736dd78570dd3fa3fa9e24-java-programming-language-icon.png"/>
+            <h6>Java</h6>
+            <p>3 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/C%2B%2B_logo.png"/>
+            <h6>C++</h6>
+            <p>1 year experience</p>
+          </div> 
+
+      </div>
+    </section>
+          
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Random Forest Accept/Deny Algorithm</h3>
+            <ul>
+              <li>Developed and deployed a Random Forest model on EHR and billing data to examine factors driving claim denials, leveraging SHAP analysis, streamlining claim management, and contributing to an $8M revenue increase at Carewell Hospital</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Distracted Driver Detection</h3>
+            <ul>
+              <li>Developed Convolutional Neural Network to detect whether drivers were distracted, training it with saliency maps and fine-tuning a pre-trained VGG16 network</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>NBA Player Advanced Real Plus-Minus(ESPN-inspired)</h3>
+            <ul>
+              <li>Built a model that estimates an NBA player’s impact per 100 possessions using game data</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Marcus is a quick learner and team player.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Marcus was an amazing experience. He meets deadlines, has a good work ethic, and is a joy to have around the office.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Marcus is very knowledgeable in his domain and willing to expand his domain.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(true)">Ok</button>
+    </div>
+  </body>
+</html>
